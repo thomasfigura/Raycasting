@@ -3,6 +3,36 @@
 
 CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/SDL2/SDL.h \
   /usr/include/SDL2/SDL_main.h \
   /usr/include/SDL2/SDL_stdinc.h \
@@ -12,23 +42,10 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
   /usr/include/SDL2/begin_code.h \
   /usr/include/SDL2/close_code.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/features.h \
-  /usr/include/features-time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
@@ -46,19 +63,6 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -76,13 +80,9 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/inttypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/ctype.h \
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/cmath \
@@ -413,57 +413,25 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/SDL2/SDL_atomic.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
-
-/usr/include/c++/11/stdlib.h:
-
-/usr/include/SDL2/SDL_rect.h:
-
-/usr/include/SDL2/SDL_video.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h:
-
-/usr/include/c++/11/bits/std_abs.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
 /usr/include/SDL2/SDL_sensor.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
-/usr/include/SDL2/SDL_touch.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/c++/11/bits/std_abs.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -475,9 +443,25 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/string.h:
 
-/usr/include/features-time64.h:
+/usr/include/endian.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/SDL2/begin_code.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/SDL2/SDL_platform.h:
+
+/usr/include/SDL2/SDL_version.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/SDL2/SDL_config.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
+
+/usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/SDL2/SDL_stdinc.h:
 
@@ -501,59 +485,25 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
-/usr/include/SDL2/SDL_version.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h:
 
-/usr/include/c++/11/tr1/poly_hermite.tcc:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/SDL2/close_code.h:
+/usr/include/SDL2/SDL_main.h:
 
-/usr/include/features.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/c++/11/ext/numeric_traits.h:
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
-
-/usr/include/ctype.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/SDL2/SDL_hints.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/SDL2/begin_code.h:
-
-/usr/include/SDL2/SDL_config.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
-
-/usr/include/c++/11/ext/type_traits.h:
+/usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/SDL2/SDL_haptic.h:
 
@@ -567,15 +517,93 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/SDL2/SDL_touch.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
+
+/usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/SDL2/SDL_hints.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h:
+
+/usr/include/c++/11/bits/concept_check.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/SDL2/close_code.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/c++/11/tr1/poly_hermite.tcc:
+
+/usr/include/features-time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -583,27 +611,15 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/inttypes.h:
 
-/usr/include/SDL2/SDL_platform.h:
+/usr/include/SDL2/SDL_rect.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/usr/include/SDL2/SDL_video.h:
 
-/usr/include/endian.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h:
-
-/usr/include/SDL2/SDL_main.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+/usr/include/c++/11/stdlib.h:
 
 /usr/include/SDL2/SDL_keycode.h:
 
@@ -647,10 +663,6 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/strings.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
 /usr/include/SDL2/SDL_blendmode.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
@@ -660,18 +672,6 @@ CMakeFiles/Raycasting.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/stdint.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h:
-
-/usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
 
