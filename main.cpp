@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 
 #include "SDL2/SDL.h"
 
@@ -20,8 +20,8 @@ typedef int64_t i64;
         exit(1);                      \
     }
 
-#define SCREEN_WIDTH 320
-#define SCREEN_HEIGHT 180
+#define SCREEN_WIDTH 384
+#define SCREEN_HEIGHT 216
 
 typedef struct v2_s {
     f32 x, y;
@@ -79,7 +79,6 @@ struct {
     u32 pixels[SCREEN_WIDTH * SCREEN_HEIGHT];
     bool quit;
     v2 pos, dir, plane;
-
 } state;
 
 static void verline(int x, int y0, int y1, u32 color) {
@@ -95,7 +94,7 @@ static void render() {
                         state.dir.y + state.plane.y * xcam};
 
         v2 pos = state.pos;
-        v2 ipos = {(int)pos.x, (int)pos.y};
+        v2i ipos = {(int)pos.x, (int)pos.y};
 
         const v2 deltadist = {fabsf(dir.x) < 1e-10 ? 1e30 : fabsf(1.0f / dir.x),
                               fabsf(dir.y) < 1e-10 ? 1e30 : fabsf(1.0f / dir.y)};
@@ -125,9 +124,47 @@ static void render() {
                 ipos.x >= 0 && ipos.x < MAP_SIZE && ipos.y >= 0 && ipos.y < MAP_SIZE,
                 "DDA out of bounds");
 
-            hit.pos = (v2) { pos.x + sidedist.x, pos.y + sidedist.y};
+            hit.val = MAPDATA[ipos.y * MAP_SIZE + ipos.x];
         }
+        u32 color;
+        switch (hit.val) {
+        case 1:
+            color = 0xFF0000FF;
+            break;
+        case 2:
+            color = 0xFF00FF00;
+            break;
+        case 3:
+            color = 0xFFFF0000;
+            break;
+        case 4:
+            color = 0xFFFF00FF;
+            break;
+        }
+        if (hit.side == 1) {
+            const u32 br = ((color & 0xFF00FF) * 0xC0) >> 8,
+                      g = ((color & 0x00FF00) * 0xC0) >> 8;
+            color = 0xFF000000 | (br & 0xff00ff) | (g & 0x00ff00);
+        }
+        hit.pos = (v2){pos.x + sidedist.x, pos.y + sidedist.y};
+
+        const f32 dperp = hit.side == 0 ? (sidedist.x - deltadist.x) : (sidedist.y - deltadist.y);
+        const int h = (int)(SCREEN_HEIGHT / dperp),
+                  y0 = max((SCREEN_HEIGHT / 2) - (h / 2), 0),
+                  y1 = min((SCREEN_HEIGHT / 2) + (h / 2), SCREEN_HEIGHT - 1);
+
+        verline(x, 0, y0, 0xFF202020);
+        verline(x, y0, y1, color);
+        verline(x, y1, SCREEN_HEIGHT - 1, 0xFF505050);
     }
+}
+
+static void rotate(f32 rot) {
+    const v2 d = state.dir, p = state.plane;
+    state.dir.x = d.x * cos(rot) - d.y * sin(rot);
+    state.dir.y = d.x * sin(rot) + d.y * cos(rot);
+    state.plane.x = p.x * cos(rot) - p.y * sin(rot);
+    state.plane.y = p.x * sin(rot) + p.y * cos(rot);
 }
 
 int main(int argc, char *argv[]) {
@@ -148,8 +185,8 @@ int main(int argc, char *argv[]) {
                                       SCREEN_HEIGHT);
     ASSERT(state.texture, "Failed to Create SDL Renderer: %s\n", SDL_GetError());
 
-    state.pos = (v2){5, 5};
-    state.dir = normalize(((v2){-1.0f, 0.0f}));
+    state.pos = (v2){2, 2};
+    state.dir = normalize(((v2){-1.0f, 0.1f}));
     state.plane = (v2){0.0f, 0.66f};
 
     while (!state.quit) {
@@ -161,6 +198,28 @@ int main(int argc, char *argv[]) {
                 break;
             }
         }
+
+        const f32 rotspeed = 2.0f * 0.016f,
+                  movespeed = 2.0f * 0.016f;
+
+        const u8 *keystate = SDL_GetKeyboardState(NULL);
+        if (keystate[SDL_SCANCODE_LEFT]) {
+            rotate(+rotspeed);
+        }
+        if (keystate[SDL_SCANCODE_RIGHT]) {
+            rotate(-rotspeed);
+        }
+        if (keystate[SDL_SCANCODE_UP]) {
+            state.pos.x += state.dir.x * movespeed;
+            state.pos.y += state.dir.y * movespeed;
+        }
+        if (keystate[SDL_SCANCODE_DOWN]) {
+            state.pos.x -= state.dir.x * movespeed;
+            state.pos.y -= state.dir.y * movespeed;
+        }
+
+        memset(state.pixels, 0, sizeof(state.pixels));
+
         render();
         SDL_UpdateTexture(state.texture, NULL, state.pixels, SCREEN_WIDTH * 4);
         SDL_RenderCopyEx(state.renderer, state.texture, NULL, NULL, 0.0, NULL,
